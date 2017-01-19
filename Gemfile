@@ -15,6 +15,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'pry'
 gem 'pry-remote'
 gem 'pry-stack_explorer'
+gem 'omniauth-procore'
 group :development, :test do
   gem 'byebug', platform: :mri
 end
