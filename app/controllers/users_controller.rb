@@ -1,3 +1,6 @@
+require "http"
+require 'uri'
+
 class UsersController < ApplicationController
   before_action :authenticate_user!
   after_action :verify_authorized
@@ -32,8 +35,7 @@ class UsersController < ApplicationController
   def login_to_procore
     user = current_user
     authorize user
-    binding.pry
-    redirect_to users_path, :notice => "User updated."
+    redirect_to "https://app.procore.com/oauth/authorize?response_type=code&client_id=" + ENV['PROCORE_CLIENT_ID'] + "&redirect_uri=" + "http://localhost:3000/users/auth/procore/callback"
   end
 
   private

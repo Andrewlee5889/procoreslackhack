@@ -14,6 +14,10 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'omniauth-procore'
 gem 'dotenv-rails', :groups => [:development, :test]
+gem 'pry'
+gem 'pry-remote'
+gem 'pry-stack_explorer'
+gem 'http'
 group :development, :test do
   gem 'byebug', platform: :mri
 end
