@@ -1,5 +1,4 @@
 require "rest-client"
-require "omniauth-procore"
 
 module Procore
   class Client
@@ -48,18 +47,13 @@ module Procore
     attr_reader :endpoint, :data
 
     def vapid_url
-      "#{PROCORE_ROOT}/vapid/#{endpoint}"
+      "#{PROCORE_HOST}/vapid/#{endpoint}"
     end
 
     def headers
       {
-        "Content-Type" => "application/json",
-        "Authorization" => "Bearer #{access_token}"
+        "Content-Type" => "application/json"
       }
-    end
-
-    def access_token
-      # TODO: get access_token using OmniAuth
     end
   end
 end
