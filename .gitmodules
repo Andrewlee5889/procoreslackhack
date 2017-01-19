@@ -1,3 +1,0 @@
-[submodule "slack"]
-	path = app/assets/javascripts/slack
-	url = https://github.com/smallwins/slack.git
