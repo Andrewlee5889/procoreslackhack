@@ -4,7 +4,7 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
-    authorize User
+    authorize @users
   end
 
   def show
@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     authorize @user
   end
 
-  def update
+  def updated
     @user = User.find(params[:id])
     authorize @user
     if @user.update_attributes(secure_params)
@@ -27,6 +27,12 @@ class UsersController < ApplicationController
     authorize user
     user.destroy
     redirect_to users_path, :notice => "User deleted."
+  end
+
+  def login_to_procore
+    user = current_user
+    authorize user
+    redirect_to users_path, :notice => "User updated."
   end
 
   private

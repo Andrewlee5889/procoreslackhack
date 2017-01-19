@@ -31,6 +31,15 @@
         <%= f.password_field :current_password, class: 'form-control' %>
       </div>
     </fieldset>
+    <fieldset>
+      <p>PLEASE ENTER YOUR PROCORE LOGIN INFORMATION</p>
+      <div class="form-group">
+        <%= f.label :procore_login %>
+        <%= f.text_field :procore_login %>
+        <%= f.label :procore_password %>
+        <%= f.password_field :procore_password %>
+      </div>
+    </fieldset>
     <%= f.submit 'Update', :class => 'button right' %>
   <% end %>
 </div>

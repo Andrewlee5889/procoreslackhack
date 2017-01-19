@@ -60,6 +60,8 @@ GEM
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
       rack (>= 0.9.0)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
@@ -179,6 +181,12 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-remote (0.1.8)
+      pry (~> 0.9)
+      slop (~> 3.0)
+    pry-stack_explorer (0.4.9.2)
+      binding_of_caller (>= 0.7)
+      pry (>= 0.9.11)
     public_suffix (2.0.5)
     puma (3.6.2)
     pundit (1.1.0)
@@ -319,6 +327,9 @@ DEPENDENCIES
   launchy
   listen (~> 3.0.5)
   pg
+  pry
+  pry-remote
+  pry-stack_explorer
   puma (~> 3.0)
   pundit
   rails (~> 5.0.1)
