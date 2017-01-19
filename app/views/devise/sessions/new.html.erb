@@ -1,5 +1,5 @@
 <div class="authform">
-  <%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => { :role => 'form'}) do |f| %>
+  <%= form_for(resource, :as => resource_name, :url => user_procore_omniauth_authorize_path, :html => { :role => 'form'}) do |f| %>
     <h3>Sign in</h3>
     <%= devise_error_messages! %>
     <div class="form-group">
@@ -25,8 +25,6 @@
         </div>
       <% end -%>
   <% end %>
-
-  <%= link_to 'Authenticate with Procore!', '/auth/procore' %>
 
   <% OmniAuth::Form.build {} %>
 </div>
