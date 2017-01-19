@@ -32,6 +32,7 @@ class UsersController < ApplicationController
   def login_to_procore
     user = current_user
     authorize user
+    binding.pry
     redirect_to users_path, :notice => "User updated."
   end
 
