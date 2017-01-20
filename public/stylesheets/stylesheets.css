@@ -56,13 +56,14 @@ h2 > span {
 }
 
 .company-info {
-  position: relative;
+  font-weight: bold;
 }
 
 .company-logo {
   height: 100px;
-  width: 100px;
+  width: 100%;
   color: red;
+  border-style: solid;
 }
 
 .add-group {
@@ -74,13 +75,13 @@ h2 > span {
 }
 
 .conversation-wrap {
-  height: calc(100vh - 160px);
-  overflow-y: scroll;
+  /*height: calc(100vh - 160px);
+  overflow-y: scroll;*/
 }
 
-.user_conversations {
-  /*overflow-y: scroll;*/
-  /*height: calc(100vh - 173px);*/
+.user-conversations {
+  overflow-y: scroll;
+  height: calc(100vh - 272px);
 }
 
 .message-wrap {
@@ -88,7 +89,7 @@ h2 > span {
 }
 
 .msg-wrap {
-  height: calc(100vh - 200px);
+  height: calc(100vh - 215px);
   overflow-y: scroll;
   width: 100%;
 }

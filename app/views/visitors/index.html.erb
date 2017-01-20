@@ -1,18 +1,19 @@
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     <div class="col-lg-12 text-center main-logo">
       <%= image_tag('prochat-logo.png') %>
       <p class="lead">Facilitating Communications with Procore's Customers</p>
     </div>
-    <div>
-
-    </div>
-    <div class="conversation-wrap col-lg-3 col-xs-3">
+    <div class="col-lg-3 col-md-3 col-xs-3">
       <div class="company-info">
         <span class="company-name">
           Account Name
         </span>
+        <div class="pull-right">
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </div>
         <div class="company-logo">
+          Account Logo
         </div>
       </div>
       <div class="user-conversations">
@@ -77,7 +78,9 @@
         </div>
       </div>
     </div>
-    <div class="message-wrap col-lg-9 col-xs-9 boxsizingBorder">
+    <div class="col-lg-9 col-md-9 col-xs-9">
+      <span><strong>Group Name/People</strong></span>
+      <span class="glyphicon glyphicon-option-vertical pull-right hvr-grow"></span>
       <div class="msg-wrap">
           <div class="media msg ">
             <a class="pull-left" href="#">
