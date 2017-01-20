@@ -11,8 +11,62 @@ main {
   overflow-y: hidden;
 }
 
+.add-group:hover {
+  text-decoration: none;
+}
+
+.conversation-category {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.media-heading {
+  padding-left: 25px;
+}
+
+.media-heading > button {
+  background: transparent;
+  border: none;
+  outline:none;
+}
+
+.main-logo {
+  padding: 10px;
+  padding-bottom: 0;
+}
+
 textarea {
   resize: none;
+}
+
+
+/* Simple Date Line CSS */
+h2 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+h2 > span {
+  background: inherit;
+  padding:0 10px;
+  font-size: 0.5em;
+}
+
+.company-info {
+  position: relative;
+}
+
+.company-logo {
+  height: 100px;
+  width: 100px;
+  color: red;
+}
+
+.add-group {
+  padding-bottom: 30px;
 }
 
 .message-wrap {
@@ -20,9 +74,13 @@ textarea {
 }
 
 .conversation-wrap {
-  position: fixed;
-  height: calc(100vh - 171px);
+  height: calc(100vh - 160px);
   overflow-y: scroll;
+}
+
+.user_conversations {
+  /*overflow-y: scroll;*/
+  /*height: calc(100vh - 173px);*/
 }
 
 .message-wrap {
@@ -39,9 +97,16 @@ textarea {
   padding-top: 3px;
 }
 
-.send-message {
+/*.send-message {
   position: fixed;
   bottom: 2%;
+  min-width: 300px;
   max-width: calc(100vw - 575px);
   z-index: 9999;
+}*/
+
+.boxsizingBorder {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
