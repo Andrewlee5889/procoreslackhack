@@ -74,11 +74,6 @@ h2 > span {
   height: calc(100vh - 171px);
 }
 
-.conversation-wrap {
-  /*height: calc(100vh - 160px);
-  overflow-y: scroll;*/
-}
-
 .user-conversations {
   overflow-y: scroll;
   height: calc(100vh - 272px);
@@ -97,14 +92,6 @@ h2 > span {
 .send-wrap {
   padding-top: 3px;
 }
-
-/*.send-message {
-  position: fixed;
-  bottom: 2%;
-  min-width: 300px;
-  max-width: calc(100vw - 575px);
-  z-index: 9999;
-}*/
 
 .boxsizingBorder {
     -webkit-box-sizing: border-box;
