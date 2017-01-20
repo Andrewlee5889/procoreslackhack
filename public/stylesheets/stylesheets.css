@@ -1,0 +1,47 @@
+.body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  height: calc(100vh - 51px);
+  width: 100vw;
+  overflow-y: hidden;
+}
+
+textarea {
+  resize: none;
+}
+
+.message-wrap {
+  height: calc(100vh - 171px);
+}
+
+.conversation-wrap {
+  position: fixed;
+  height: calc(100vh - 171px);
+  overflow-y: scroll;
+}
+
+.message-wrap {
+  position: fixed;
+}
+
+.msg-wrap {
+  height: calc(100vh - 200px);
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.send-wrap {
+  padding-top: 3px;
+}
+
+.send-message {
+  position: fixed;
+  bottom: 2%;
+  max-width: calc(100vw - 575px);
+  z-index: 9999;
+}
