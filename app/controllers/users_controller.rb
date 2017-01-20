@@ -35,7 +35,11 @@ class UsersController < ApplicationController
   def login_to_procore
     user = current_user
     authorize user
-    redirect_to "https://app.procore.com/oauth/authorize?response_type=code&client_id=" + ENV['PROCORE_CLIENT_ID'] + "&redirect_uri=" + "http://localhost:3000/users/auth/procore/callback"
+    redirect_to "https://app.procore.com/oauth/authorize?response_type=code&client_id=" + ENV['PROCORE_CLIENT_ID'] + "&redirect_uri=" + "http://localhost:3000/users/auth/procore/callback" + "&login=gino+admin@procore.com&password=pr0c0re"
+  end
+
+  def procore_access_token
+    binding.pry
   end
 
   private

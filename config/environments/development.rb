@@ -1,4 +1,6 @@
 Rails.application.configure do
+  PROCORE_HOST = ENV.fetch("PROCORE_HOST")
+  
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
