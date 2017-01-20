@@ -3,12 +3,25 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
 main {
+  padding-top: 50px;
   height: calc(100vh - 51px);
   width: 100vw;
   overflow-y: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
 .add-group:hover {
@@ -21,7 +34,7 @@ main {
 }
 
 .media-heading {
-  padding-left: 25px;
+  padding-left: 5px;
 }
 
 .media-heading > button {
@@ -59,6 +72,10 @@ h2 > span {
   font-weight: bold;
 }
 
+.search-convo {
+  padding-right: 15px;
+}
+
 .company-logo {
   height: 100px;
   width: 100%;
@@ -76,7 +93,7 @@ h2 > span {
 
 .user-conversations {
   overflow-y: scroll;
-  height: calc(100vh - 272px);
+  height: calc(100vh - 222px);
 }
 
 .message-wrap {
@@ -84,17 +101,64 @@ h2 > span {
 }
 
 .msg-wrap {
-  height: calc(100vh - 215px);
+  height: calc(100vh - 175px);
   overflow-y: scroll;
   width: 100%;
+  background-color: #FFFFFF;
+  padding: 3px;
 }
 
 .send-wrap {
   padding-top: 3px;
 }
 
+.media-heading > button {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Pills */
+.nav-pills {
+  li > a {
+    border-radius: 0px;
+    padding: 2px 8px;
+  }
+
+  li.active > a {
+    color:#0875CE;
+  }
+
+  li.active > a,
+  li > a:hover {
+    background-color: rgba(0,0,0,0);
+    border-left-color: #7394CE;
+    border-left-width: 5px;
+    border-left-style: solid;
+  }
+}
+
+.main-logo {
+  text-align: center;
+  margin: auto;
+  padding-left: 175px;
+}
+
+.media-heading:hover {
+  border-left-color: #7394CE;
+  border-left-width: 1px;
+  border-left-style: solid;
+  max-width: 1px;
+  height: 20px;
+  background-image: linear-gradient(11deg, #529edc, #9a8ac0);
+}
+
 .boxsizingBorder {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+}
+
+.nav {
+  padding-bottom: 10px;
+  display: block;
 }

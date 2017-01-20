@@ -1,6 +1,7 @@
 <%# navigation styled for Bootstrap 3.0 %>
+<%= stylesheet_link_tag "stylesheets.css" %>
 <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
+  <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
@@ -14,7 +15,11 @@
       <ul class="nav navbar-nav">
         <%= render 'layouts/navigation_links' %>
         <%= render 'layouts/nav_links_for_auth' %>
+        <li class="main-logo"><%= image_tag('prochat-white-logo.png') %></li>
       </ul>
     </div>
+    <!--<ul class="nav navbar-nav navbar-right">
+      <li><%= image_tag('prochat-white-logo.png') %></li>
+    </ul>-->
   </div>
 </nav>
